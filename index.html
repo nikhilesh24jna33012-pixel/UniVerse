@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniVerse — Your Campus, Connected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-orb orb-one"></div><div class="login-orb orb-two"></div>
+  <main class="login-layout">
+    <section class="login-brand">
+      <a class="brand brand-large" href="index.html"><span class="brand-mark">U</span><span>Uni<span class="brand-accent">Verse</span></span></a>
+      <div class="brand-copy">
+        <p class="eyebrow light-eyebrow">THE DIGITAL UNIVERSITY</p>
+        <h1>Your campus.<br><span>Your universe.</span></h1>
+        <p class="brand-description">One connected space for learning, people, ideas and everything happening on campus.</p>
+        <div class="login-feature-row"><span>✦ Smart campus</span><span>◈ One connected hub</span><span>⌁ Built for tomorrow</span></div>
+      </div>
+      <div class="login-bottom-note"><span class="status-dot"></span> Your campus experience starts here</div>
+    </section>
+    <section class="login-side">
+      <form class="login-card" id="loginForm">
+        <div class="mobile-brand brand"><span class="brand-mark">U</span><span>Uni<span class="brand-accent">Verse</span></span></div>
+        <div class="login-card-heading"><p class="eyebrow">WELCOME TO YOUR CAMPUS</p><h2>Sign in to UniVerse</h2><p>Enter your details to open your digital campus.</p></div>
+        <label for="username">Username</label>
+        <div class="input-wrap"><span>＠</span><input id="username" type="text" placeholder="Enter your username" autocomplete="username" required></div>
+        <label for="password">Password</label>
+        <div class="input-wrap"><span>⌑</span><input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></div>
+        <label for="role">Continue as</label>
+        <select id="role" required>
+          <option value="Student">Student</option><option value="Faculty">Faculty</option>
+          <option value="HOD">HOD</option><option value="Admin">Admin</option><option value="Principal">Principal</option>
+        </select>
+        <button class="button button-primary login-button" type="submit">Enter UniVerse <span>→</span></button>
+        <p class="login-hint">Demo prototype · Use any username and password</p>
+        <p class="login-error" id="loginError" aria-live="polite"></p>
+      </form>
+      <p class="login-footer">Designed for a smarter, more connected campus.</p>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
